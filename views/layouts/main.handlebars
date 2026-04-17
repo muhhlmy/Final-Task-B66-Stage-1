@@ -5,36 +5,72 @@
     <title>
       {{title}}
     </title>
+    {{! TailwindCSS }}
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    {{! External CSS }}
+    <link rel="stylesheet" href="css/style.css" />
+    {{! Plus Jakarta Sans Font }}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <h1>
-        HELMY
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="">
-              Tech Stack
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Experiences
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <body class="text-[#171717]">
+    <header class="p-6 bg-[#FAFAFA]/70 backdrop-blur-xl">
+      <div class="container mx-auto flex justify-between items-center">
+        {{! Logo }}
+        <h1 class="font-black text-2xl tracking-[-1.2px]">
+          M-HELMY
+        </h1>
+        {{! Nav Links }}
+        <nav>
+          <ul
+            class="flex gap-10 font-bold text-base text-[#737373] tracking-[-0.4px]"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                Tech Stack
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                Experiences
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        {{! CTA }}
+        <a
+          href="#"
+          class="bg-[#2B3437] text-[#F7F7FF] px-8 py-3 rounded-full font-medium border border-transparent hover:text-[#171717] hover:bg-[#F7F7FF] hover:border-[#171717] duration-300 transition-all"
+        >
+          Get in Touch
+        </a>
+      </div>
     </header>
     {{{body}}}
   </body>
