@@ -1,0 +1,47 @@
+<section id="techSection" class="bg-[#F8F9FA] py-20">
+  <div
+    class="container mx-auto px-12 py-20 bg-[#F1F4F6] rounded-3xl flex flex-col gap-24 lg:flex-row items-center justify-between"
+  >
+    {{! Section Title }}
+    <h2 class="font-extrabold text-4xl text-gray-800 tracking-[-0.6px] w-fit">
+      Technical
+      <br />
+      Proficiency
+    </h2>
+    {{! Tech Stack Container }}
+    <div class="w-full overflow-hidden mask-gradient py-2">
+      <div class="flex gap-14 items-center w-max animate-infinite-scroll">
+        {{! Tech Stack Cards - First Set }}
+        {{#each techStack}}
+          <div
+            class="bg-white rounded-2xl p-6 hover:shadow-xs transition-all duration-300 hover:-translate-y-2 flex flex-col items-center justify-center gap-3 w-32 border border-gray-100 group shrink-0 cursor-pointer"
+          >
+            <i
+              class="{{iconPrefix}}
+                {{icon}}
+                duration-300 transition-all text-5xl group-hover:{{iconClass}}"
+            ></i>
+            <p class="font-medium text-gray-700">
+              {{iconName}}
+            </p>
+          </div>
+        {{/each}}
+        {{! Tech Stack Cards - Second Set for Infinite Loop }}
+        {{#each techStack}}
+          <div
+            class="bg-white rounded-2xl p-6 hover:shadow-xs transition-all duration-300 hover:-translate-y-2 flex flex-col items-center justify-center gap-3 w-32 border border-gray-100 group shrink-0"
+          >
+            <i
+              class="{{iconPrefix}}
+                {{icon}}
+                duration-300 transition-all text-5xl group-hover:{{iconClass}}"
+            ></i>
+            <p class="font-medium text-gray-700">
+              {{iconName}}
+            </p>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
