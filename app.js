@@ -64,10 +64,22 @@ const techStack = [
     iconName: "Node.js",
   },
   {
-    iconPrefix: "fa-solid",
-    icon: "fa-server",
-    iconClass: "text-gray-700",
+    iconPrefix: "",
+    icon: "devicon-express-original",
+    iconClass: "colored",
     iconName: "Express.js",
+  },
+  {
+    iconPrefix: "",
+    icon: "devicon-postgresql-plain",
+    iconClass: "colored",
+    iconName: "PostgreSQL",
+  },
+  {
+    iconPrefix: "",
+    icon: "devicon-mysql-original",
+    iconClass: "colored",
+    iconName: "MySQL",
   },
 ];
 
