@@ -118,12 +118,51 @@ const experiences = [
   },
 ];
 
+const projects = [
+  {
+    projectImage:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    projectName: "Web Portofolio",
+    projectDesc:
+      "Website portfolio modern dengan tampilan clean dan responsive.",
+  },
+  {
+    projectImage:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    projectName: "Dashboard Admin",
+    projectDesc:
+      "Dashboard management data dengan statistik interaktif dan UI modern.",
+  },
+  {
+    projectImage:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    projectName: "E-Commerce Store",
+    projectDesc:
+      "Toko online lengkap dengan fitur cart, checkout, dan payment gateway.",
+  },
+  {
+    projectImage:
+      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80",
+    projectName: "Landing Page Startup",
+    projectDesc:
+      "Landing page profesional untuk startup dengan desain minimalis.",
+  },
+  {
+    projectImage:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    projectName: "Task Management App",
+    projectDesc:
+      "Aplikasi manajemen tugas dengan fitur drag and drop serta realtime.",
+  },
+];
+
 // Routes
 app.get("/", (req, res) => {
   res.render("home", {
     title: "Portofolio | Muhammad Helmy",
     techStack: techStack,
     experiences: experiences,
+    projects: projects,
   });
 });
 

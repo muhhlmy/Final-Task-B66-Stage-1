@@ -1,0 +1,50 @@
+<section id="projectsSection" class="bg-[#F8F9FA] py-20">
+  <div class="container mx-auto px-6 flex flex-col gap-6">
+    <h2 class="font-extrabold text-5xl tracking-[-2.4px] mb-10">
+      Projects
+    </h2>
+    {{! Projects Container }}
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14">
+      {{! Project Card }}
+      {{#each projects}}
+        <div
+          class="bg-white p-7 border border-slate-100 rounded-4xl group cursor-pointer hover:-translate-y-2 hover:shadow-xs duration-300 transition-all"
+        >
+          {{! Photo }}
+          <div
+            class="relative overflow-hidden rounded-3xl bg-[#F5F5F5] shadow-sm"
+          >
+            {{#if projectImage}}
+              <img
+                src="{{projectImage}}"
+                alt="Project Preview"
+                class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            {{else}}
+              <img
+                src="https://placehold.co/500x500?text={{projectName}}"
+                alt="Project Preview"
+                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            {{/if}}
+
+            {{! Overlay }}
+            <div
+              class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"
+            ></div>
+          </div>
+
+          {{! Title & Desc }}
+          <div class="mt-4">
+            <h3 class="text-2xl font-bold tracking-[-1px] text-[#2B3437]">
+              {{projectName}}
+            </h3>
+            <p class="mt-2 text-base text-[#737373] leading-relaxed">
+              {{projectDesc}}
+            </p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
