@@ -83,11 +83,47 @@ const techStack = [
   },
 ];
 
+const experiences = [
+  {
+    start: "2023",
+    end: "Present",
+    role: "Fullstack Web Developer",
+    company: "Freelance",
+    description:
+      "Building modern web applications with Node.js, Express.js, PostgreSQL, and Tailwind CSS.",
+  },
+  {
+    start: "2022",
+    end: "2023",
+    role: "Frontend Developer Trainee",
+    company: "DumbWays Indonesia",
+    description:
+      "Developed responsive user interfaces and improved frontend development skills through intensive project-based learning.",
+  },
+  {
+    start: "2021",
+    end: "2022",
+    role: "Personal Project Developer",
+    company: "Self-Employed",
+    description:
+      "Worked on personal and academic projects including CRUD systems, authentication, and dashboard pages.",
+  },
+  {
+    start: "2020",
+    end: "2021",
+    role: "Web Design Learner",
+    company: "Independent Study",
+    description:
+      "Learned the fundamentals of web design, layouting, and responsive development through hands-on practice.",
+  },
+];
+
 // Routes
 app.get("/", (req, res) => {
   res.render("home", {
     title: "Portofolio | Muhammad Helmy",
     techStack: techStack,
+    experiences: experiences,
   });
 });
 

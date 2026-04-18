@@ -1,0 +1,32 @@
+<section id="experiencesSection" class="bg-[#F8F9FA] py-32">
+  <div class="container mx-auto grid lg:grid-cols-3 md:grid-cols-1">
+    {{! Section Title }}
+    <h1 class="font-extrabold text-5xl tracking-[-2.4px]">
+      Experinces
+      <br />
+      Timeline
+    </h1>
+    {{! Experiences Container}}
+    <div class="col-span-2 grid grid-cols-1 gap-24">
+      {{! Experiences }}
+      {{#each experiences}}
+        <div class="flex flex-col">
+          <span
+            class="font-bold text-sm text-[#737C7F] uppercase tracking-widest mb-4"
+          >
+            {{start}} — {{end}}
+          </span>
+          <h3 class="font-extrabold text-3xl text-[#2B3437]">
+            {{role}}
+          </h3>
+          <span class="font-semibold text-lg text-[#575E70] mt-2">
+            {{company}}
+          </span>
+          <p class="text-base text-[#586064] mt-4">
+            {{description}}
+          </p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
