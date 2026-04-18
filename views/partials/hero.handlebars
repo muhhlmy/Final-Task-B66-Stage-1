@@ -1,0 +1,42 @@
+<section id="heroSection" class="bg-[#F8F9FA] py-26">
+  <div class="container mx-auto grid grid-cols-2">
+    {{! Text }}
+    <div class="flex flex-col gap-8 justify-center">
+      <h1
+        class="font-extrabold text-7xl tracking-[-3.6px] text-[#2B3437] leading-16"
+      >
+        Hi there! Nice to meet you.
+      </h1>
+      <p class="text-xl text-[#586064] leading-8">
+        I am a senior full-stack developer dedicated to crafting intentional
+        digital experiences. I believe in software that feels like an
+        architectural masterpiece, restrained, powerful, and permanent.
+      </p>
+      {{! Buttons }}
+      <div class="font-bold flex gap-4">
+        <a href="#" class="bg-[#2B3437] text-[#F7F7FF] px-10 py-4 rounded-full">
+          Contact Me
+        </a>
+        <a
+          href="#"
+          class="text-[#2B3437] border border-[#ABB3B7]/30 px-10 py-4 rounded-full"
+        >
+          Download CV
+        </a>
+      </div>
+    </div>
+    {{! Photo }}
+    <div class="flex justify-center">
+      <div class="relative group">
+        <div
+          class="absolute inset-0 border-2 border-[#2B3437] rounded-3xl transform translate-x-6 translate-y-6 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"
+        ></div>
+        <img
+          src="images/photo.png"
+          alt="Professional Developer"
+          class="relative w-[380px] h-[480px] object-cover rounded-3xl shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:-translate-x-2 grayscale hover:grayscale-0"
+        />
+      </div>
+    </div>
+  </div>
+</section>
