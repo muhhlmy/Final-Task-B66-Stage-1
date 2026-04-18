@@ -1,30 +1,36 @@
-<section id="heroSection" class="bg-[#F8F9FA] py-20">
-  <div class="container mx-auto grid grid-cols-2">
+<section id="heroSection" class="bg-[#F8F9FA] py-12 md:py-20 px-6 md:px-0">
+  <div
+    class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0"
+  >
     {{! Text }}
-    <div class="flex flex-col gap-8 justify-center">
+    <div
+      class="flex flex-col gap-6 md:gap-8 justify-center order-2 md:order-1 text-center md:text-left items-center md:items-start"
+    >
       <h1
-        class="font-extrabold text-7xl tracking-[-3.6px] text-[#2B3437] leading-20"
+        class="font-extrabold text-5xl md:text-7xl tracking-[-3.6px] text-[#2B3437] leading-tight md:leading-20"
       >
         Hi there!,
         <br />
         I'm Muhammad Helmy.
       </h1>
-      <p class="text-xl text-[#586064] leading-8">
+      <p class="text-lg md:text-xl text-[#586064] leading-relaxed md:leading-8">
         I am a junior full-stack developer dedicated to crafting intentional
         digital experiences. I believe in software that feels like an
         architectural masterpiece, restrained, powerful, and permanent.
       </p>
       {{! Buttons }}
-      <div class="font-bold flex gap-4">
+      <div
+        class="font-bold flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4 md:mt-0"
+      >
         <a
           href="#"
-          class="bg-[#2B3437] text-[#F7F7FF] px-10 py-4 rounded-full flex items-center justify-center hover:-translate-y-2 hover:shadow-md duration-300 transition-all"
+          class="bg-[#2B3437] text-[#F7F7FF] px-8 md:px-10 py-4 rounded-full flex items-center justify-center hover:-translate-y-2 hover:shadow-xl active:scale-95 focus:ring-4 focus:ring-gray-300 outline-none duration-300 transition-all w-full sm:w-auto"
         >
           View Projects
         </a>
         <a
           href="#"
-          class="text-[#2B3437] border border-[#ABB3B7]/30 px-10 py-4 rounded-full flex items-center justify-center gap-2 hover:-translate-y-2 hover:bg-white hover:shadow-md duration-300 transition-all"
+          class="text-[#2B3437] border border-[#ABB3B7]/30 px-8 md:px-10 py-4 rounded-full flex items-center justify-center gap-2 hover:-translate-y-2 hover:bg-white hover:shadow-xl active:scale-95 focus:ring-4 focus:ring-gray-200 outline-none duration-300 transition-all w-full sm:w-auto"
         >
           Download CV
           <i class="fa-regular fa-circle-down"></i>
@@ -32,15 +38,19 @@
       </div>
     </div>
     {{! Photo }}
-    <div class="flex justify-end">
-      <div class="relative group">
+    <div
+      class="flex justify-center md:justify-end order-1 md:order-2 mb-8 md:mb-0"
+    >
+      <div
+        class="relative group w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+      >
         <div
           class="absolute inset-0 border-2 border-[#2B3437] rounded-3xl transform transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"
         ></div>
         <img
           src="images/profile.png"
           alt="Professional Developer"
-          class="relative w-[580px] h-[680px] object-cover rounded-3xl shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:-translate-x-2 grayscale hover:grayscale-0"
+          class="relative w-full aspect-[4/5] object-cover rounded-3xl shadow-xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:-translate-x-2 grayscale hover:grayscale-0"
         />
       </div>
     </div>

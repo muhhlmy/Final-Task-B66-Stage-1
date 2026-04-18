@@ -27,21 +27,26 @@
     />
   </head>
   <body class="text-[#171717]">
-    <header class="sticky top-0 z-50 p-6 bg-[#FAFAFA]/70 backdrop-blur-xl">
-      <div class="container mx-auto flex justify-between items-center">
+    {{! Header }}
+    <header
+      class="sticky top-0 z-50 py-4 px-6 md:px-0 md:py-6 bg-[#FAFAFA]/70 backdrop-blur-xl"
+    >
+      <div
+        class="container mx-auto flex flex-wrap md:flex-nowrap justify-between items-center gap-4"
+      >
         {{! Logo }}
         <a href="#" class="font-black text-2xl tracking-[-1.2px]">
           M-HELMY
         </a>
         {{! Nav Links }}
-        <nav>
+        <nav class="w-full md:w-auto order-3 md:order-2">
           <ul
-            class="flex gap-10 font-bold text-base text-[#737373] tracking-[-0.4px]"
+            class="flex flex-wrap md:flex-row justify-center gap-4 md:gap-10 font-bold text-sm md:text-base text-[#737373] tracking-[-0.4px] items-center"
           >
             <li>
               <a
                 href="#techSection"
-                class="hover:text-[#171717] duration-300 transition-all"
+                class="hover:text-[#171717] hover:-translate-y-1 block duration-300 transition-all"
               >
                 Tech Stack
               </a>
@@ -49,23 +54,23 @@
             <li>
               <a
                 href="#experiencesSection"
-                class="hover:text-[#171717] duration-300 transition-all"
+                class="hover:text-[#171717] hover:-translate-y-1 block duration-300 transition-all"
               >
                 Experiences
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="hover:text-[#171717] duration-300 transition-all"
+                href="#projectsSection"
+                class="hover:text-[#171717] hover:-translate-y-1 block duration-300 transition-all"
               >
                 Projects
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="hover:text-[#171717] duration-300 transition-all"
+                href="#contactSection"
+                class="hover:text-[#171717] hover:-translate-y-1 block duration-300 transition-all"
               >
                 Contact
               </a>
@@ -75,12 +80,65 @@
         {{! CTA }}
         <a
           href="#"
-          class="bg-[#2B3437] text-[#F7F7FF] px-8 py-3 rounded-full font-medium border border-transparent hover:text-[#171717] hover:bg-[#F7F7FF] hover:border-[#171717] duration-300 transition-all"
+          class="bg-[#2B3437] text-[#F7F7FF] px-6 py-2 md:px-8 md:py-3 text-sm md:text-base rounded-full font-medium border border-[#2B3437] hover:text-[#171717] hover:bg-[#F7F7FF] hover:border-[#171717] hover:-translate-y-1 hover:shadow-lg active:scale-95 focus:ring-4 focus:ring-gray-200 outline-none duration-300 transition-all order-2 md:order-3"
         >
           Get in Touch
         </a>
       </div>
     </header>
-    {{{body}}}
+
+    {{! Main Content }}
+    <main>
+      {{{body}}}
+    </main>
+
+    {{! Footer }}
+    <footer
+      class="bg-[#F8F9FA] py-10 px-6 md:px-0 flex items-center justify-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-0 justify-center"
+      >
+        {{! Nav Links }}
+        <nav>
+          <ul
+            class="flex flex-wrap justify-center gap-6 md:gap-10 text-xs text-[#737373] tracking-[1.4px]"
+          >
+            <li>
+              <a
+                href="#techSection"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experiencesSection"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                GITHUB
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                INSTAGRAM
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#171717] duration-300 transition-all"
+              >
+                DRIBBLE
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
