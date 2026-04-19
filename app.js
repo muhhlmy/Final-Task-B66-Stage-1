@@ -125,6 +125,7 @@ const projects = [
     projectName: "Web Portofolio",
     projectDesc:
       "Website portfolio modern dengan tampilan clean dan responsive.",
+    tags: ["Node.js", "Express", "Tailwind CSS"],
   },
   {
     projectImage:
@@ -132,6 +133,7 @@ const projects = [
     projectName: "Dashboard Admin",
     projectDesc:
       "Dashboard management data dengan statistik interaktif dan UI modern.",
+    tags: ["React", "Tailwind CSS", "PostgreSQL"],
   },
   {
     projectImage:
@@ -139,6 +141,7 @@ const projects = [
     projectName: "E-Commerce Store",
     projectDesc:
       "Toko online lengkap dengan fitur cart, checkout, dan payment gateway.",
+    tags: ["Vue.js", "Node.js", "MySQL"],
   },
   {
     projectImage:
@@ -146,6 +149,7 @@ const projects = [
     projectName: "Landing Page Startup",
     projectDesc:
       "Landing page profesional untuk startup dengan desain minimalis.",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   {
     projectImage:
@@ -153,6 +157,7 @@ const projects = [
     projectName: "Task Management App",
     projectDesc:
       "Aplikasi manajemen tugas dengan fitur drag and drop serta realtime.",
+    tags: ["React", "Firebase", "Tailwind CSS"],
   },
 ];
 
