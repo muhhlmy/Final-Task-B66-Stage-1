@@ -6,7 +6,6 @@ html {
   scrollbar-width: none;
 }
 
-/* Untuk Tech Stack */
 @keyframes infinite-scroll {
   0% {
     transform: translateX(0);
