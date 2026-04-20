@@ -11,24 +11,18 @@ html {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% - 12px));
+    transform: translateX(-50%);
   }
 }
 .animate-infinite-scroll {
-  animation: infinite-scroll 50s linear infinite;
+  animation: infinite-scroll 60s linear infinite;
 }
 .animate-infinite-scroll:hover {
   animation-play-state: paused;
 }
+
 .mask-gradient {
   mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 10%,
-    black 90%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
     to right,
     transparent,
     black 10%,
